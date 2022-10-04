@@ -24,6 +24,7 @@ int main(){
             sort(arr.begin(),arr.end());
             surplus--;
         }
+        cout<<surplus;
         cout<<arr[arr.size() - 1];
     }
     return 0;
