@@ -32,6 +32,24 @@ node* buildTree(node* root){
 
 }
 
+node* buildTree2(node* root){
+    cout<<"Enter num = "<<endl;
+    int data;
+    cin>>data;
+    newRoot = new node(data);
+
+    if(data == -1) return NULL;
+
+    cout<<"Enter num to insert in left of "<<data<<endl;
+    root->left = buildTree2(newRoot->left);
+
+    cout<<"Enter num to insert in right of "<<data<<endl;
+    root->right = buildTree2(newRoot->right);
+
+    return newRoot;
+
+}
+
 void levelOrderTraversal(node* root){
 
     cout<<"Level Order Traversal"<<endl;
