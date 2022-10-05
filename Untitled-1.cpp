@@ -10,6 +10,12 @@ int main(){
         cin>> item;
         arr.push_back(item);
     }
+    
+    for(int i=0 ; i<n/2 ; i--){
+        int item;
+        cin>> item;
+        arr.pop();
+    }
 
     sort(arr.begin(), arr.end());
 
