@@ -51,6 +51,10 @@ vector<vector<int>> threeSum(vector<int>& nums) {
             }
             cout<<endl;
         }
+        
+        for(int i=0 ; i<ansVector.size() ; i++){
+            reverse(ansVector[i].end(),ansVector[i].begin());
+        }
 
         return ansVector;
     }
